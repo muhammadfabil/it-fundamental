@@ -27,7 +27,7 @@ export default function Layout({ children }: { children: ReactNode }) {
       <body className={montserrat.className}>
         <div className="flex flex-col min-h-screen">
           {/* Header */}
-          <header className="bg-black text-yellow-500 py-4 relative border-b-4 border-yellow-500">
+          <header className="bg-black text-yellow-500 py-4 relative border-b-4 border-yellow-500 mx-6">
             <nav className="container mx-auto flex justify-between items-center font-extrabold">
               {/* Logo di kiri */}
               <Link href="/" className="flex-shrink-0">
