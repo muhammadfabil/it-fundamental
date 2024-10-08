@@ -2,6 +2,7 @@
 import "./globals.css";
 import { ReactNode, useState } from "react";
 
+
 import Link from "next/link";
 import Image from 'next/image'
 import { Montserrat } from '@next/font/google';
@@ -104,11 +105,21 @@ export default function Layout({ children }: { children: ReactNode }) {
 
           {/* Footer */}
           <footer className="bg-yellow-700 text-white py-20 mt-8 text-2xl font-extrabold">
-            <div className="container mx-auto text-center">
-              <p>© ITERA Career Day 2023</p>
-              <p>Part of the 9th anniversary of ITERA </p>
-            </div>
-          </footer>
+  <div className="container mx-auto text-center">
+    <p>© ITERA Career Day 2023</p>
+    <p>Part of the 9th anniversary of ITERA</p>
+    <div className="flex justify-center mt-4">
+      <a href="https://www.instagram.com/iteracareerday/" target="_blank" rel="noopener noreferrer" className="mx-2">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 2.25c-2.96 0-3.337.01-4.507.065-1.148.055-1.925.24-2.608.512a5.139 5.139 0 00-1.843 1.185 5.139 5.139 0 00-1.185 1.843c-.272.683-.457 1.46-.512 2.608-.056 1.17-.065 1.547-.065 4.507s.01 3.337.065 4.507c.055 1.148.24 1.925.512 2.608a5.139 5.139 0 001.185 1.843 5.139 5.139 0 001.843 1.185c.683.272 1.46.457 2.608.512 1.17.056 1.547.065 4.507.065s3.337-.01 4.507-.065c1.148-.055 1.925-.24 2.608-.512a5.139 5.139 0 001.843-1.185 5.139 5.139 0 001.185-1.843c.272-.683.457-1.46.512-2.608.056-1.17.065-1.547.065-4.507s-.01-3.337-.065-4.507c-.055-1.148-.24-1.925-.512-2.608a5.139 5.139 0 00-1.185-1.843 5.139 5.139 0 00-1.843-1.185c-.683-.272-1.46-.457-2.608-.512C15.337 2.26 14.96 2.25 12 2.25zM12 0c3.053 0 3.454.01 4.65.067 1.195.057 2.02.252 2.746.548a6.675 6.675 0 012.43 1.593 6.675 6.675 0 011.593 2.43c.296.726.491 1.551.548 2.746.057 1.196.067 1.597.067 4.65s-.01 3.454-.067 4.65c-.057 1.195-.252 2.02-.548 2.746a6.675 6.675 0 01-1.593 2.43 6.675 6.675 0 01-2.43 1.593c-.726.296-1.551.491-2.746.548-1.196.057-1.597.067-4.65.067s-3.454-.01-4.65-.067c-1.195-.057-2.02-.252-2.746-.548a6.675 6.675 0 01-2.43-1.593 6.675 6.675 0 01-1.593-2.43c-.296-.726-.491-1.551-.548-2.746C.01 15.454 0 15.053 0 12s.01-3.454.067-4.65c.057-1.195.252-2.02.548-2.746a6.675 6.675 0 011.593-2.43A6.675 6.675 0 015.238.616C5.964.32 6.789.125 7.984.068 9.18.01 9.58 0 12 0z"/>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 5.75A6.25 6.25 0 1018.25 12 6.258 6.258 0 0012 5.75zM12 16.25a4.25 4.25 0 114.25-4.25 4.254 4.254 0 01-4.25 4.25zm4.75-8.75a1 1 0 10-1-1 1 1 0 001 1z"/>
+        </svg>
+      </a>
+      Instagram
+    </div>
+  </div>
+</footer>
+
         </div>
       </body>
     </html>
