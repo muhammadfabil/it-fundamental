@@ -23,10 +23,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 
   return (
     <html lang="en">
-        <Head>
-        <title>ITERA Career Day 2023</title>
-        <link rel="icon" href="/logoicd.png" sizes="any" />
-      </Head>
+        
       <body className={montserrat.className}>
         <div className="flex flex-col min-h-screen">
           {/* Header */}
