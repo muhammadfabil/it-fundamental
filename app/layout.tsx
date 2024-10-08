@@ -115,7 +115,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 5.75A6.25 6.25 0 1018.25 12 6.258 6.258 0 0012 5.75zM12 16.25a4.25 4.25 0 114.25-4.25 4.254 4.254 0 01-4.25 4.25zm4.75-8.75a1 1 0 10-1-1 1 1 0 001 1z"/>
         </svg>
       </a>
-      Instagram
+      Instagram @iteracareerday
     </div>
   </div>
 </footer>
