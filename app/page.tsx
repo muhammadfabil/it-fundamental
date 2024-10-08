@@ -2,11 +2,12 @@
 
 import { motion } from "framer-motion";
 import React from "react";
-import Image from "next/image"; // Import Next Image component
-import { ImagesSlider } from "@/components/ui/images-slider"; // Pastikan komponen ini benar-benar ada
+import Image from "next/image";
+import { ImagesSlider } from "@/components/ui/images-slider"; // Pastikan ini ada
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { useRouter } from 'next/navigation';
 
+// Komponen Utama
 export default function Home() {
   return (
     <div>
@@ -18,13 +19,13 @@ export default function Home() {
   );
 }
 
-// Tombol event
+// Tombol Event
 const EventButton = () => {
   const router = useRouter();
 
   return (
     <button 
-      onClick={() => router.push('/events')} // Langsung panggil router.push
+      onClick={() => router.push('/events')} 
       className="mt-9 px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white text-center rounded-full relative"
     >
       <span>Event Details →</span>
@@ -33,9 +34,7 @@ const EventButton = () => {
   );
 };
 
-export { EventButton };
-
-// Slider gambar
+// Komponen Slider Gambar
 export function ImagesSliderDemo() {
   const images = [
     "/home1.JPG",
@@ -47,23 +46,13 @@ export function ImagesSliderDemo() {
     "/home7.JPG",
     "/home8.JPG"
   ];
-  
+
   const words = [
-    {
-      text: "Dengan",
-    },
-    {
-      text: "Inspirasi",
-    },
-    {
-      text: "Wujudkan",
-    },
-    {
-      text: "Karier",
-    },
-    {
-      text: "Berprestasi",
-    },
+    { text: "Dengan" },
+    { text: "Inspirasi" },
+    { text: "Wujudkan" },
+    { text: "Karier" },
+    { text: "Berprestasi" }
   ];
 
   return (
@@ -83,8 +72,7 @@ export function ImagesSliderDemo() {
   );
 }
 
-// Bagian "Company participants" dan logo
-
+// Komponen Perusahaan Peserta
 export function CompanyParticipants() {
   const logos = [
     "/logo1.png",
@@ -93,25 +81,20 @@ export function CompanyParticipants() {
     "/logo4.png",
     "/logo5.png",
     "/logo6.png",
-    "/logo7.png",
+    "/logo7.png"
   ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        staggerChildren: 0.1
-      }
+      transition: { staggerChildren: 0.1 }
     }
   };
 
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
+    visible: { y: 0, opacity: 1 }
   };
 
   return (
@@ -153,29 +136,20 @@ export function CompanyParticipants() {
   );
 }
 
-
-
+// Komponen Guest Speaker
 export function GuestSpeaker() {
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.5,
-        when: "beforeChildren",
-        staggerChildren: 0.2
-      }
+      transition: { duration: 0.5, staggerChildren: 0.2 }
     }
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5 }
-    }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
   };
 
   return (
@@ -220,6 +194,7 @@ export function GuestSpeaker() {
   );
 }
 
+// Komponen Tanggal Event
 export function DateComponent() {
   return (
     <div className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] bg-yellow-700 flex justify-center items-center h-24 flex-col">
@@ -229,4 +204,3 @@ export function DateComponent() {
     </div>
   );
 }
-
