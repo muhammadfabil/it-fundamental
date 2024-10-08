@@ -1,17 +1,19 @@
 'use client'
 import "./globals.css";
 import { ReactNode, useState } from "react";
-import { Metadata } from 'next';
-import Head from 'next/head';
+
 import Link from "next/link";
 import Image from 'next/image'
 import { Montserrat } from '@next/font/google';
+
 
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '700'], // Sesuaikan dengan berat font yang kamu butuhkan
 });
+
+
 
 export default function Layout({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
