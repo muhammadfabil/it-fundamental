@@ -65,7 +65,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="hover:text-white">
-                  <Link href="/events">Events</Link>
+                  <Link href="/events">Details</Link>
                 </li>
                 <li className="hover:text-white">
                   <Link href="/committee">Committee</Link>

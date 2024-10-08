@@ -7,12 +7,13 @@ const EventButton = () => {
 
   return (
     <button 
-      onClick={() => router.push('/events')} 
-      className="mt-9 px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white text-center rounded-full relative"
-    >
-      <span>Event Details →</span>
-      <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-    </button>
+  onClick={() => router.push('/events')} 
+  className="mt-9 px-4 py-2 backdrop-blur-sm border bg-yellow-500/10 border-yellow-500/20 text-white text-center rounded-full relative"
+>
+  <span>Event Details →</span>
+  <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-yellow-500 to-transparent" />
+</button>
+
   );
 };
 export function ImagesSliderDemo() {
