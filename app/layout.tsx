@@ -2,6 +2,7 @@
 import "./globals.css";
 import { ReactNode, useState } from "react";
 import { Metadata } from 'next';
+import Head from 'next/head';
 import Link from "next/link";
 import Image from 'next/image'
 import { Montserrat } from '@next/font/google';
@@ -22,6 +23,10 @@ export default function Layout({ children }: { children: ReactNode }) {
 
   return (
     <html lang="en">
+        <Head>
+        <title>ITERA Career Day 2023</title>
+        <link rel="icon" href="/logoicd.png" sizes="any" />
+      </Head>
       <body className={montserrat.className}>
         <div className="flex flex-col min-h-screen">
           {/* Header */}
