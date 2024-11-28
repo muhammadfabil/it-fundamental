@@ -19,13 +19,15 @@ export function GuestSpeaker() {
 
   return (
     <motion.div 
-      className="text-center mt-16 relative"  
+      className="text-center mt-16 relative overflow-hidden" // Tambahkan overflow-hidden di container utama
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <Meteors number={30} /> {/* Tambahkan meteors di sini */}
+      <div className="absolute inset-0 overflow-hidden"> {/* Wrapper meteors */}
+        <Meteors number={30} />
+      </div>
       
       <motion.h2 
         className="text-3xl font-semibold text-yellow-500"
